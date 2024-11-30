@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header class="header-container">
+        <nav class="ipass">
+            <b>password</b>
+        </nav>
+        <nav class="generator">
+            <p>Generate Your Password</p>
+        </nav>
+    </header>
+
+    <section class="main-section">
+        <div class="strong">
+            <h1 id="text"></h1>
+            <br>
+            <p>A powerful generator for powerful password to protect your online accounts</p>
+
+        </div>
+        <div class="password-choose">
+            <div class="password-type"  id="randy">
+                <p>Choose password type</p>
+                <div class="random-top">
+                    <button id="random">Random</button>
+                    <button id="memorable">Memorable</button>
+                    <button id="pin">#Pin</button>
+                    <div class="bg-trans" id="slide"></div>
+                </div>
+                <div class="customize">Customize Your new password</div>
+                
+                <div id="main-password">
+                    <hr class="line-1">
+                    <div class="character">
+                        <p>characters</p>
+                        <div class="rang-cont">
+                            <input type="range" class="event" id="range">
+                            <input type="numeric" class="nums"  id="range-input">
+                        </div>
+                    </div>
+                    <hr class="line-2">
+                    <div class="number-cont">
+                        <div class="number">
+                            <p>Number</p>
+                            <input type="checkbox">
+                            <span class="slider event" id="sliding"></span>
+                        </div>
+                        <div class="number" id="respon">
+                            <p>Symbols</p>
+                            <input type="checkbox">
+                            <span class="slider event" id="symbol"></span>
+                        </div>
+                    </div>
+                    <hr class="line-3">
+                    <div class="generate">
+                        <p>Generate password</p>
+                        <div class="screen" id="screen"></div>
+                    </div>
+
+                </div>
+
+                <div id="memorable-password">
+                    <hr class="line-1">
+                    <div class="character">
+                        <p>characters</p>
+                        <div class="rang-cont">
+                            <input type="range" class="connect" id="range1">
+                            <input type="numeric" class="nums" id="input1">
+                        </div>
+                    </div>
+                    <hr class="line-2">
+                    <div class="number-cont" id="main-count">
+                        <div class="number" id="cap">
+                            <p>Capitalize the first letter</p>
+                            <input type="checkbox">
+                            <span class="slider connect" id="capitalize"></span>
+                        </div>
+                        <div class="number" id="resp">
+                            <p>Use full words</p>
+                            <input type="checkbox">
+                            <span class="slider connect" id="usefullword"></span>
+                        </div>
+                    </div>
+                    <hr class="line-3">
+                    <div class="generate">
+                        <p>Generate password</p>
+                        <div class="screen  connect" id="screen1"></div>
+                    </div>
+
+                </div>
+    
+                <div id="pin-password" class="pin-bg">
+                    <hr class="line-1">
+                    <div class="character">
+                        <p>characters</p>
+                        <div class="rang-cont">
+                            <input type="range" id="rangepin">
+                            <input type="numeric" class="nums" id="numberpin">
+                        </div>
+                    </div>
+                    
+                    <hr class="line-3">
+                    <div class="generate">
+                        <p>Generate password</p>
+                        <div class="screen-1" id="screenpin"></div>
+                        <button class="butin"  id="reload" onclick="refresh()">Refresh password</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    
+</body>
+<script  src="./index.js"></script>
+</html>
