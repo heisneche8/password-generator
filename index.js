@@ -64,7 +64,7 @@ range.min=1;
 range.max=100,
 range.step=1;
 range.value=1;
-range.addEventListener('click', function(){
+range.addEventListener('change', function(){
 
     rangeinput.value = range.value;
     screen.textContent = generator(parseInt(range.value))
@@ -159,7 +159,7 @@ range1.max = 15;
 range1.step = 1;
 range1.value = 1;
 
-range1.addEventListener('click', function(e){
+range1.addEventListener('input', function(e){
     e.preventDefault()
     input1.value = range1.value
     screen1.textContent = generate(parseInt(range1.value))
@@ -257,7 +257,7 @@ rangepin.min =1 ;
 rangepin.max=12;
 rangepin.step=1;
 rangepin.value=1;
-rangepin.addEventListener("click",function(e){
+rangepin.addEventListener("change",function(e){
     e.preventDefault()
     // alert("new")
     numberpin.value = rangepin.value 
